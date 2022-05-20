@@ -18,6 +18,13 @@ export const Container = styled.div `
     border-radius: 1rem;
     box-shadow: 0px 3px 5px 3px #8800dd ;
 
+    .line-title {
+    width: 100% ;
+    height: 2px ;
+    background: #00000030 ;
+    margin-bottom: 2rem ;
+  }
+
     div {
       display: flex ;
       align-items: center ;
@@ -26,7 +33,7 @@ export const Container = styled.div `
 
   h1 {
     text-align: center ;
-    margin: 0 0 1.5rem 0;
+    margin: 0 0 .5rem 0;
   }
 
   h5 {

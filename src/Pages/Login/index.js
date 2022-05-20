@@ -52,6 +52,7 @@ export function Login() {
     <Container>
       <main>  
         <h1>Lista de Tarefas</h1>
+        <div className='line-title'></div>
         
         <div>
           <ImGithub size={18}/>
