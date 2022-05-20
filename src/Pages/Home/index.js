@@ -2,11 +2,9 @@ import { ContainerApp, ContainerModal } from '../../Global.js'
 import { Header } from '../../components/Header/index';
 import { Dashboard } from '../../components/Dashboard/index.js';
 
-import { Context } from "../../Context"
-
 import Modal from 'react-modal';
 
-import { useEffect, useState, useContext } from 'react';
+import { useEffect, useState } from 'react';
 
 export function Home() {
 
@@ -15,8 +13,6 @@ const [task, setTask] = useState('')
 const [time, setTime] = useState('')
 const [format, setFormat] = useState('')
 const [data, setData] = useState([])
-
-const {userContext} = useContext(Context)
 
 useEffect(()=>{  
   const localData = localStorage.length > 0 ? JSON.parse(localStorage.getItem('user')) : []
